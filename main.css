@@ -5,11 +5,37 @@
 	--beige: #f2f3d9;
 	--antique-brass: #dc9e82;
 	--fuzzy-wuzzy: #c16e70;
+
+	/* CSS HEX */
+	--dark-purple: #32213a;
+	--independence: #383b53;
+	--dark-electric-blue: #66717e;
+	--pale-spring-bud: #d4d6b9;
+	--sage: #d1caa1;
+
+	--background: var(--dark-purple);
 }
 
 html,
 body {
-	background-color: var(--space-cadet);
+	background-color: var(--background);
+	height: 100%;
+}
+
+.library {
+	height: 100%;
+}
+
+.book-card {
+	width: 25%;
+	height: 50%;
+	background-color: var(--oxford-blue);
+	border-radius: 1em;
+}
+
+.book-title {
+	color: var(--beige);
+	margin: 1rem;
 }
 
 button {
