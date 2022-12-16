@@ -1,0 +1,24 @@
+/* CSS HEX */
+:root {
+	--space-cadet: #151e3f;
+	--oxford-blue: #030027;
+	--beige: #f2f3d9;
+	--antique-brass: #dc9e82;
+	--fuzzy-wuzzy: #c16e70;
+}
+
+html,
+body {
+	background-color: var(--space-cadet);
+}
+
+button {
+	background-color: var(--fuzzy-wuzzy);
+	color: var(--oxford-blue);
+	border: solid 0px;
+	font-size: 2em;
+	font-weight: 800;
+	height: 1.5em;
+	width: 1.5em;
+	border-radius: 50%;
+}
