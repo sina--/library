@@ -34,8 +34,16 @@ body {
 }
 
 .book-title {
-	color: var(--beige);
+	color: var(--pale-spring-bud);
 	margin: 1rem;
+	padding: 0;
+}
+
+.details {
+	display: flex;
+	margin: 1rem;
+	justify-content: space-between;
+	color: var(--sage);
 }
 
 button {
