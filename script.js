@@ -9,7 +9,29 @@ let testLibrary = [
 ];
 
 let myLibrary = [];
+
 let shelf = document.getElementById('library');
+
+function addBook(event) {
+	event.preventDefault();
+	let title = document.getElementById('title').value;
+	let author = document.getElementById('author').value;
+	let year = document.getElementById('year').value;
+	let id = Object.keys(data).length + 1;
+}
+
+function bookActions() {
+	let bookActions = document.createElement('div');
+	for (i = 0; i < actionButtons.length; i++) {
+		let toggleRead = document.createElement('button');
+		let removeBook = document.createElement('button');
+		toggleRead.textContent = 'Y';
+		removeBook.textContent = 'X';
+		bookActions.appendChild(toggleRead);
+		bookActions.appendChild(removeBook);
+	}
+}
+
 
 function Book() {
 }
@@ -33,6 +55,8 @@ function init() {
 		book.appendChild(details);
 		details.appendChild(bookAuthor);
 		details.appendChild(bookYear);
+		bookActions();
+		book.appendChild(bookActions);
 	}
 }
 
